@@ -1,0 +1,93 @@
+.siparis-success {
+  min-height: 80vh;
+  background-color: #ce2829;
+  color: #faf7f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.success-header {
+  position: absolute;
+  top: 30px;
+}
+
+.success-logo {
+  width: min(360px, 90vw);
+}
+
+.success-content {
+  text-align: center;
+  width: min(640px, 100%);
+}
+
+.success-content h1 {
+  margin: 0 0 14px;
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.success-content hr {
+  border: 0;
+  border-top: 1px solid #f2b8b8;
+  margin: 10px auto 20px;
+  width: 100%;
+}
+
+.success-top {
+  margin: 0;
+  font-family: "Satisfy", cursive;
+  color: #fdc913;
+  font-size: 34px;
+}
+
+.success-content ul {
+  list-style: none;
+  margin: 14px auto 20px;
+  padding: 0;
+  width: 300px;
+  text-align: left;
+}
+
+.success-content li {
+  margin-bottom: 8px;
+}
+
+.success-summary {
+  border: 1px solid #f2b8b8;
+  border-radius: 8px;
+  width: 260px;
+  margin: 0 auto;
+  padding: 14px;
+  text-align: left;
+}
+
+.success-summary p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.api-info {
+  display: block !important;
+  margin: 6px 0 0;
+}
+
+.success-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.success-actions button,
+.siparis-success > button {
+  border: 0;
+  background-color: #fdc913;
+  color: #292929;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}

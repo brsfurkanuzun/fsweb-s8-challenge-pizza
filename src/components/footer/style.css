@@ -1,0 +1,55 @@
+.app-footer {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 56px 20px 28px;
+}
+
+.footer-grid {
+  width: min(1000px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 30px;
+}
+
+.footer-logo {
+  width: 180px;
+}
+
+.footer-list,
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.footer-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #d0d0d0;
+}
+
+.footer-menu li {
+  color: #d0d0d0;
+  margin-bottom: 8px;
+}
+
+.insta-grid {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.insta-grid img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+@media (max-width: 800px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

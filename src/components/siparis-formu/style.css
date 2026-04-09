@@ -1,0 +1,253 @@
+.siparis-container {
+  min-height: 100vh;
+  background-color: #faf7f2;
+}
+
+.siparis-header {
+  background-color: #ce2829;
+  color: #fff;
+  text-align: center;
+  padding: 24px 0 14px;
+}
+
+.header-logo {
+  width: min(360px, 90%);
+}
+
+.siparis-header nav {
+  margin: 14px 0 0;
+  font-size: 14px;
+}
+
+.link-btn {
+  border: 0;
+  background: transparent;
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+.siparis-content {
+  width: min(640px, calc(100% - 32px));
+  margin: 24px auto 60px;
+  color: #292929;
+}
+
+.pizza-isim {
+  font-size: 28px;
+  margin: 0 0 10px;
+}
+
+.fiyat-puan {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.fiyat {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.puan,
+.yorum {
+  color: #5f5f5f;
+}
+
+.pizza-aciklama {
+  color: #5f5f5f;
+  line-height: 1.7;
+  margin: 14px 0 30px;
+}
+
+.isim-alani {
+  margin-bottom: 24px;
+}
+
+.isim-alani label,
+.alan-label,
+.siparis-notu label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.isim-alani input,
+.siparis-notu textarea,
+.secim-satiri select {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  font: inherit;
+  background: #fff;
+}
+
+.secim-satiri {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.secim-satiri fieldset,
+.malzemeler {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.secim-satiri legend,
+.malzemeler legend {
+  padding: 0;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.secim-satiri fieldset {
+  flex: 1;
+}
+
+.secim-satiri > div {
+  flex: 1;
+}
+
+.secim-satiri fieldset label {
+  display: block;
+  margin: 8px 0;
+  color: #5f5f5f;
+}
+
+.secim-satiri fieldset input {
+  margin-right: 8px;
+}
+
+.malzemeler p {
+  color: #5f5f5f;
+  margin: 0 0 14px;
+}
+
+.malzeme-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px 20px;
+  margin-bottom: 28px;
+}
+
+.malzeme-grid label {
+  color: #5f5f5f;
+}
+
+.malzeme-grid input {
+  margin-right: 8px;
+}
+
+.siparis-notu textarea {
+  margin-bottom: 24px;
+  resize: vertical;
+}
+
+.alt-alan {
+  border-top: 1px solid #ddd;
+  padding-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.adet-kontrol {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.adet-kontrol button {
+  width: 48px;
+  height: 44px;
+  border: none;
+  background-color: #fdc913;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.adet-kontrol span {
+  width: 54px;
+  text-align: center;
+  line-height: 44px;
+  height: 44px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.fiyat-karti {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 320px;
+  overflow: hidden;
+}
+
+.fiyat-karti h4 {
+  margin: 18px 16px 12px;
+  font-size: 24px;
+}
+
+.fiyat-karti p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 16px 10px;
+  color: #5f5f5f;
+}
+
+.fiyat-karti .toplam {
+  color: #ce2829;
+  font-weight: 700;
+}
+
+.siparis-btn {
+  width: 100%;
+  height: 54px;
+  border: none;
+  background-color: #fdc913;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.siparis-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.hata-mesaji {
+  color: #ce2829;
+  margin: 0 0 12px;
+}
+
+@media (max-width: 700px) {
+  .pizza-isim {
+    font-size: 24px;
+  }
+
+  .fiyat {
+    font-size: 30px;
+  }
+
+  .malzeme-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .alt-alan,
+  .secim-satiri {
+    flex-direction: column;
+  }
+
+  .fiyat-karti {
+    width: 100%;
+  }
+}
